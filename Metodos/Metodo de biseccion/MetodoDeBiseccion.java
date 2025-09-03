@@ -4,7 +4,7 @@ import java.util.function.Function;
 public class MetodoDeBiseccion {
 
     public static void main(String[] args) {
-        System.out.println("=== MÉTODO DE BISECCIÓN ===");
+        System.out.println("==== MÉTODO DE BISECCIÓN ====");
 
         Function<Double, Double> funcion = (x) -> Math.pow(x, 3) + x - 1;
 
