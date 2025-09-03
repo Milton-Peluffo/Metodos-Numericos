@@ -36,7 +36,7 @@ public class MetodoDeBiseccion {
 
             } while (opcion == 1);
 
-            System.out.println("\nPrograma finalizado. 👋");
+            System.out.println("\nPrograma finalizado!");
         }
     }
 
@@ -75,7 +75,7 @@ public class MetodoDeBiseccion {
                     iteracion, extremoInferior, extremoSuperior, puntoMedio, fPuntoMedio, errorAprox);
 
             if (Math.abs(fPuntoMedio) < tolerancia || errorAprox < tolerancia) {
-                System.out.printf("\n✅ Convergió en iteración %d: raíz ≈ %.10f (error ≈ %.2e)\n",
+                System.out.printf("\nConvergió en iteración %d: raíz ≈ %.10f (error ≈ %.2e)\n",
                         iteracion, puntoMedio, errorAprox);
                 return;
             }
@@ -91,7 +91,7 @@ public class MetodoDeBiseccion {
             puntoMedioAnterior = puntoMedio;
         }
 
-        System.out.printf("\n⚠ No convergió después de %d iteraciones. Última aproximación: raíz ≈ %.10f (error ≈ %.2e)\n",
+        System.out.printf("\nNo convergió después de %d iteraciones. Última aproximación: raíz ≈ %.10f (error ≈ %.2e)\n",
                 maximoIteraciones, puntoMedio, errorAprox);
     }
 }
